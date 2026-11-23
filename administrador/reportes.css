@@ -1,0 +1,25 @@
+/* ============ REPORTES ============ */
+.reportes-periodo{
+  display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;background:#fff;border:1px solid var(--borde);
+  border-radius:14px;padding:16px;margin-bottom:16px;
+}
+.reportes-periodo .campo{min-width:150px}
+.reportes-periodo .grow{flex:1}
+.reportes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.reporte-card{
+  background:#fff;border:1px solid var(--borde);border-radius:14px;padding:18px;box-shadow:var(--sombra-xs);
+  display:flex;flex-direction:column;gap:14px;
+}
+.reporte-card h3{margin:0;font-size:13.5px;color:var(--azul);display:flex;align-items:center;gap:8px}
+.reporte-card h3 span{font-size:15px}
+.reporte-card .reporte-sub{font-size:11.5px;color:var(--gris-claro);margin:-10px 0 0}
+.reporte-card.ancho{grid-column:1 / -1}
+.reporte-kpi{display:flex;gap:20px;flex-wrap:wrap}
+.reporte-kpi div{border-right:1px dashed var(--borde);padding-right:20px}
+.reporte-kpi div:last-child{border:none}
+.reporte-kpi strong{display:block;font-size:21px;color:var(--azul);line-height:1.2}
+.reporte-kpi span{font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--gris-claro)}
+.reporte-tabla .tabla th{font-size:10px}
+.reporte-objetivo{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--gris)}
+.reporte-objetivo .progress{flex:1;height:8px}
+.reporte-acciones{display:flex;gap:8px;flex-wrap:wrap}

@@ -1,0 +1,11 @@
+/* ============ SUGERENCIAS ============ */
+.sugerencia-comentario{max-width:330px;font-size:12.5px;color:var(--gris);line-height:1.5}
+.sugerencia-comentario strong{color:var(--texto);font-weight:600;display:block;margin-bottom:1px}
+.estrellas{color:#F0A93B;letter-spacing:2px;font-size:13px}
+.estrellas .vacia{color:#D9DCE8}
+.sugerencia-tipo{display:inline-block;font-size:10.5px;background:#EEF1F8;color:var(--azul);border-radius:5px;padding:2px 7px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.sugerencias-promedio{display:flex;align-items:center;gap:12px;background:#FFF9EE;border:1px solid #F3E4C8;border-radius:12px;padding:13px 16px;margin-bottom:14px}
+.sugerencias-promedio strong{font-size:26px;color:#B07A1E;line-height:1}
+.sugerencias-promedio p{margin:0;font-size:12px;color:#8A6A33}
+.sugerencia-respuesta{background:#F2FBF8;border-left:3px solid var(--menta);border-radius:8px;padding:9px 12px;font-size:12px;color:var(--gris);margin-top:10px}
+.sugerencia-respuesta strong{display:block;color:var(--menta);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:2px}

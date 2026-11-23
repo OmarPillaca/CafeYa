@@ -1,0 +1,22 @@
+/* ============ USUARIOS Y ROLES ============ */
+.rol-badge{
+  display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;
+  padding:3px 8px;border-radius:6px;background:#EEF1F8;color:var(--azul);
+}
+.rol-badge.administrador{background:#1F2461;color:#fff}
+.rol-badge.gerencia{background:#00808F;color:#fff}
+.rol-badge.marketing{background:#B5503C;color:#fff}
+.rol-badge.operaciones{background:#00A88F;color:#fff}
+.rol-badge.cocina{background:#6B3FA0;color:#fff}
+.roles-matriz{margin-top:6px}
+.roles-matriz .tabla td{font-size:11.5px}
+.roles-matriz .si{color:var(--menta);font-weight:800}
+.roles-matriz .no{color:#C9CEDF}
+.roles-matriz th{font-size:10.5px;text-transform:none;letter-spacing:.2px}
+.rol-card{
+  border:1px solid var(--borde);border-radius:12px;padding:14px;background:#fff;display:flex;gap:11px;align-items:flex-start;
+}
+.rol-card h4{margin:0 0 2px;font-size:13px;color:var(--azul)}
+.rol-card p{margin:0;font-size:11.5px;color:var(--gris);line-height:1.5}
+.rol-card .emoji{font-size:20px}
+.roles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:14px}
