@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso administrativo · CaféYa Ica</title>
+  <link rel="icon" href="../assets/logos/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../cliente/login.css">
+  <link rel="stylesheet" href="../componentes/modales.css">
+  <link rel="stylesheet" href="../componentes/notificaciones.css">
+  <link rel="stylesheet" href="login-admin.css">
+</head>
+<body class="auth-body admin-auth">
+  <div class="auth-layout">
+    <aside class="auth-lateral admin-lateral">
+      <a class="auth-marca" href="../index.html">
+        <img src="../assets/logos/logo.svg" alt="CaféYa Ica">
+        <div><span class="marca">Café<span>Ya</span><small>Ica · Administración</small></span></div>
+      </a>
+      <div class="auth-lateral-texto">
+        <span class="auth-chip">Panel administrativo</span>
+        <h1 class="display">Controla pedidos,<br>mesas y clientes.</h1>
+        <p>Acceso para administración, gerencia, marketing, operaciones y cocina de CaféYa Ica.</p>
+        <ul class="lista-check">
+          <li>Dashboard de ventas y pedidos en tiempo real</li>
+          <li>Gestión de productos, promociones y categorías</li>
+          <li>Inventario y alertas de stock mínimo</li>
+          <li>Reportes exportables y configuración del local</li>
+        </ul>
+      </div>
+      <div class="auth-lateral-pie">
+        Zona restringida al personal autorizado<br>
+        CaféYa Ica S.A.C. · RUC 20601234567
+      </div>
+    </aside>
+
+    <main class="auth-principal">
+      <div class="auth-caja">
+        <div class="auth-caja-cabeza">
+          <span class="admin-candado">🔐</span>
+          <h2 class="display">Acceso administrativo</h2>
+          <p>Ingresa con tu cuenta del personal de CaféYa.</p>
+        </div>
+        <form id="form-admin" novalidate>
+          <div class="form-grid">
+            <div class="campo">
+              <label for="correo">Correo corporativo <span class="req">*</span></label>
+              <input type="email" id="correo" name="correo" placeholder="usuario@cafeya.pe" autocomplete="email">
+              <span class="error"></span>
+            </div>
+            <div class="campo">
+              <label for="password">Contraseña <span class="req">*</span></label>
+              <div class="campo-password">
+                <input type="password" id="password" name="password" placeholder="Tu contraseña" autocomplete="current-password">
+                <button type="button" class="ver-pass" id="ver-pass">Ver</button>
+              </div>
+              <span class="error"></span>
+            </div>
+            <label class="check"><input type="checkbox" id="recordar" checked> Mantener sesión activa</label>
+            <button class="btn btn-azul btn-block btn-lg" type="submit">Ingresar al panel</button>
+          </div>
+        </form>
+        <div class="auth-separador"><span>accesos de prueba</span></div>
+        <div class="admin-demos">
+          <button type="button" data-demo="admin@cafeya.pe|admin123">admin@cafeya.pe · admin123</button>
+          <button type="button" data-demo="gerencia@cafeya.pe|gerencia123">gerencia@cafeya.pe · gerencia123</button>
+          <button type="button" data-demo="marketing@cafeya.pe|marketing123">marketing@cafeya.pe · marketing123</button>
+          <button type="button" data-demo="operaciones@cafeya.pe|operaciones123">operaciones@cafeya.pe · operaciones123</button>
+          <button type="button" data-demo="cocina@cafeya.pe|cocina123">cocina@cafeya.pe · cocina123</button>
+        </div>
+        <p class="auth-enlace"><a href="../cliente/login.html">Soy cliente, ingresar aquí</a></p>
+        <p class="auth-enlace"><a href="../index.html">← Volver al sitio web</a></p>
+      </div>
+      <p class="auth-nota">Información almacenada localmente · Versión demostrativa</p>
+    </main>
+  </div>
+
+  <script src="../js/almacenamiento.js"></script>
+  <script src="../js/datos-iniciales.js"></script>
+  <script src="../js/utilidades.js"></script>
+  <script src="../js/validaciones.js"></script>
+  <script src="../js/autenticacion.js"></script>
+  <script src="../js/permisos.js"></script>
+  <script src="../componentes/notificaciones.js"></script>
+  <script src="../componentes/modales.js"></script>
+  <script src="login-admin.js"></script>
+</body>
+</html>

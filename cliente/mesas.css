@@ -1,0 +1,55 @@
+/* ============ MAPA DE MESAS Y QR ============ */
+.mesas-resumen{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.mesas-resumen .chip{cursor:default;background:#fff}
+.mesas-filtros{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px 16px;margin-bottom:18px}
+.mesas-filtros select{padding:9px 13px;border:1.5px solid var(--borde);border-radius:10px;font-family:inherit;font-size:13px;background:#fff;outline:none}
+.mesas-filtros .check{font-size:12.5px;background:#F8F9FD;border:1px solid var(--borde);border-radius:10px;padding:8px 12px}
+.mesa-zona{margin-bottom:24px}
+.mesa-zona h3{
+  font-size:11.5px;text-transform:uppercase;letter-spacing:1.4px;color:var(--gris);margin:0 0 10px;
+  display:flex;align-items:center;gap:8px;
+}
+.mesa-zona h3::after{content:'';flex:1;height:1px;background:var(--borde)}
+.mesas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.mesa-card{
+  background:#fff;border:1.5px solid var(--borde);border-left:5px solid var(--menta);border-radius:13px;
+  padding:14px;cursor:pointer;transition:var(--trans);position:relative;
+}
+.mesa-card:hover{transform:translateY(-3px);box-shadow:var(--sombra)}
+.mesa-card.libre{border-left-color:var(--menta)}
+.mesa-card.ocupada{border-left-color:var(--terracota);background:#FFFBFA}
+.mesa-card.reservada{border-left-color:#6B3FA0;background:#FCFAFF}
+.mesa-card.fuera{border-left-color:#9AA0B5;background:#F6F7FA;opacity:.75}
+.mesa-card .numero{font-size:19px;font-weight:800;color:var(--azul);line-height:1}
+.mesa-card .capacidad{font-size:11.5px;color:var(--gris);margin-top:3px}
+.mesa-card .caracteristicas{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
+.mesa-card .caracteristicas span{
+  width:23px;height:23px;border-radius:7px;background:#F2F4FA;display:grid;place-items:center;color:var(--gris);
+}
+.mesa-card .caracteristicas svg{width:13px;height:13px}
+.mesa-card .estado-mini{position:absolute;top:12px;right:12px;width:9px;height:9px;border-radius:50%;background:var(--menta)}
+.mesa-card.ocupada .estado-mini{background:var(--terracota)}
+.mesa-card.reservada .estado-mini{background:#6B3FA0}
+.mesa-card.fuera .estado-mini{background:#9AA0B5}
+.mesa-card .qr-hint{font-size:10.5px;color:var(--teal);font-weight:600;margin-top:9px;display:flex;align-items:center;gap:4px}
+.mesa-card .qr-hint svg{width:12px;height:12px}
+.leyenda-estados{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--gris);margin-top:18px}
+.leyenda-estados span{display:flex;align-items:center;gap:6px}
+.leyenda-estados i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.mesa-detalle-cabecera{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+.mesa-detalle-cabecera .numero{
+  width:64px;height:64px;border-radius:16px;background:var(--teal-soft);color:var(--teal);
+  display:grid;place-items:center;font-size:22px;font-weight:800;flex:0 0 auto;
+}
+.mesa-detalle-cabecera h3{margin:0;font-size:18px}
+.mesa-detalle-cabecera p{margin:2px 0 0;font-size:12px;color:var(--gris)}
+.mesa-qr{text-align:center;background:#F8F9FD;border:1px dashed var(--borde);border-radius:14px;padding:14px;margin:14px 0}
+.mesa-qr img{width:190px;height:190px;margin:0 auto 8px;background:#fff;padding:6px;border-radius:8px}
+.mesa-qr p{font-size:11.5px;color:var(--gris);margin:0}
+.mesa-caracteristicas{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.mesa-caracteristicas span{
+  display:inline-flex;align-items:center;gap:6px;background:#F2F4FA;border-radius:8px;padding:6px 10px;
+  font-size:11.5px;color:var(--gris);
+}
+.mesa-caracteristicas svg{width:14px;height:14px;color:var(--teal)}
+@media(max-width:560px){.mesas-grid{grid-template-columns:1fr 1fr}}

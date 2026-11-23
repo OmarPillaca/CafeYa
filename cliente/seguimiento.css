@@ -1,0 +1,27 @@
+/* ============ SEGUIMIENTO DEL PEDIDO ============ */
+.seguimiento-grid{display:grid;grid-template-columns:1.3fr .8fr;gap:20px;align-items:start}
+.seguimiento-cabecera{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+.seguimiento-cabecera .codigo-grande{margin:2px 0 0}
+.eta-caja{background:var(--teal-soft);border-radius:14px;padding:12px 18px;text-align:center;min-width:130px}
+.eta-caja span{display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--teal);font-weight:700}
+.eta-caja strong{font-size:22px;color:var(--azul);line-height:1.2}
+.eta-caja small{font-size:10.5px;color:var(--gris)}
+.pasos-grandes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0 6px}
+.paso-grande{
+  border:1.5px solid var(--borde);border-radius:14px;padding:14px 12px;background:#FAFBFE;text-align:center;
+}
+.paso-grande .icono{font-size:22px;margin-bottom:6px}
+.paso-grande strong{display:block;font-size:12.5px;color:var(--gris);line-height:1.25}
+.paso-grande small{font-size:10.5px;color:var(--gris-claro);display:block;margin-top:3px}
+.paso-grande.completado{border-color:var(--menta);background:var(--menta-soft)}
+.paso-grande.completado strong{color:#0A6B50}
+.paso-grande.actual{border-color:var(--teal);background:#fff;box-shadow:0 0 0 3px rgba(0,128,143,.1)}
+.paso-grande.actual strong{color:var(--azul)}
+.paso-grande.actual .icono{animation:pulsar 2s infinite}
+.qr-seguimiento{text-align:center;background:#F8F9FD;border:1px dashed var(--borde);border-radius:14px;padding:14px;margin-top:14px}
+.qr-seguimiento img{width:150px;height:150px;margin:0 auto 8px;border-radius:8px;background:#fff;padding:5px}
+.qr-seguimiento span{font-size:11px;color:var(--gris)}
+.detalle-item{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:7px 0;border-bottom:1px dashed var(--borde)}
+.detalle-item:last-child{border:none}
+@media(max-width:1000px){.seguimiento-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.pasos-grandes{grid-template-columns:1fr}.seguimiento-cabecera{gap:10px}}

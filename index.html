@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CaféYa Ica · Café de especialidad, postres y zona de estudio</title>
+  <meta name="description" content="CaféYa Ica: café de especialidad, postres artesanales, zona de estudio con Wi-Fi y enchufes. Pide para recoger y reserva tu mesa en Ica.">
+  <link rel="icon" href="assets/logos/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="componentes/navbar.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="pagina-publica">
+
+  <div id="navbar"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-contenido">
+      <span class="hero-etiqueta">☕ Café de especialidad · Ica</span>
+      <h1 class="display">Tu café favorito,<br><span>listo a tu hora.</span></h1>
+      <p class="hero-texto">
+        Café tostado en Ica, postres artesanales y una zona de estudio con Wi-Fi y enchufes.
+        Pide desde tu celular, elige la hora de recojo y sigue tu pedido en tiempo real.
+      </p>
+      <div class="hero-acciones">
+        <a class="btn btn-primario btn-lg" href="cliente/menu.html">Pedir para recoger</a>
+        <a class="btn btn-claro btn-lg" href="cliente/reserva.html">Reservar mesa</a>
+      </div>
+      <div class="hero-datos">
+        <div><strong>8 min</strong><span>objetivo de preparación</span></div>
+        <div><strong>5 compras</strong><span>1 bebida gratuita</span></div>
+        <div><strong>12 mesas</strong><span>con QR propio</span></div>
+      </div>
+      <div class="hero-accesos">
+        <span>Accesos de prueba:</span>
+        <a href="cliente/login.html">cliente@cafeya.pe / 123456</a>
+        <a href="administrador/login-admin.html">admin@cafeya.pe / admin123</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-foto">
+        <img id="foto-principal" alt="Interior de CaféYa Ica con café y postres">
+        <div class="hero-foto-tag">
+          <span class="pulso"></span> Abierto hoy · 08:00 a 22:00
+        </div>
+      </div>
+      <div class="hero-flotante pedido">
+        <div class="hero-flotante-icono">🥤</div>
+        <div>
+          <strong>Pedido CY-1042 listo</strong>
+          <small>Recojo en barra · hace 2 min</small>
+        </div>
+        <span class="badge badge-listo">Listo</span>
+      </div>
+      <div class="hero-flotante rating">
+        <div class="estrellas">★★★★★</div>
+        <div><strong>4.8 / 5</strong><small>+320 clientes frecuentes en Ica</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRANJA DE BENEFICIOS RÁPIDOS -->
+  <section class="franja">
+    <div id="franja" class="franja-grid"></div>
+  </section>
+
+  <!-- PROMOCIONES -->
+  <section class="seccion" id="promociones">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="seccion-etiqueta">Promociones vigentes</span>
+        <h2 class="display">Ahorra sin dejar de disfrutar</h2>
+        <p>Combos y descuentos activos creados por el equipo de CaféYa.</p>
+      </div>
+      <a class="btn btn-claro" href="cliente/menu.html">Ver todo el menú</a>
+    </div>
+    <div id="promociones-grid" class="promociones-grid"></div>
+  </section>
+
+  <!-- POPULARES -->
+  <section class="seccion seccion-alt" id="populares">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="seccion-etiqueta">Los más pedidos</span>
+        <h2 class="display">Productos populares</h2>
+        <p>Los favoritos de nuestros clientes, listos para agregar a tu pedido.</p>
+      </div>
+      <a class="btn btn-claro" href="cliente/menu.html">Abrir menú digital</a>
+    </div>
+    <div id="populares-grid" class="productos-grid"></div>
+  </section>
+
+  <!-- COMBOS -->
+  <section class="seccion" id="combos">
+    <div class="seccion-cabeza">
+      <div>
+        <span class="seccion-etiqueta">Combos CaféYa</span>
+        <h2 class="display">Combina y paga menos</h2>
+        <p>Combinaciones armadas por nuestro barista para acompañar tu día.</p>
+      </div>
+    </div>
+    <div id="combos-grid" class="combos-grid"></div>
+  </section>
+
+  <!-- ZONA DE ESTUDIO -->
+  <section class="seccion estudio" id="estudio">
+    <div class="estudio-foto">
+      <img id="foto-estudio" alt="Zona de estudio de CaféYa Ica">
+      <div class="estudio-tag">
+        <strong>Zona silenciosa</strong>
+        <span>Mesas M04, M08 y M10</span>
+      </div>
+    </div>
+    <div class="estudio-texto">
+      <span class="seccion-etiqueta">Trabaja y estudia con nosotros</span>
+      <h2 class="display">La zona de estudio que Ica necesitaba</h2>
+      <p>
+        Mesas amplias, conexión Wi-Fi estable, enchufes individuales y un ambiente silencioso.
+        Reserva tu mesa por hora y pide tu café sin levantarte: el QR de cada mesa abre el menú
+        con tu número de mesa ya identificado.
+      </p>
+      <ul class="lista-check">
+        <li>Wi-Fi de alta velocidad en todo el local</li>
+        <li>Enchufes en mesas de estudio y terraza</li>
+        <li>Reserva por hora con confirmación del local</li>
+        <li>Combo Zona Estudio con bebida y postre</li>
+      </ul>
+      <div class="flex-wrap">
+        <a class="btn btn-teal" href="cliente/reserva.html">Reservar mesa de estudio</a>
+        <a class="btn btn-claro" href="cliente/mesas.html">Ver mapa de mesas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="seccion seccion-alt" id="beneficios">
+    <div class="seccion-cabeza centro">
+      <div>
+        <span class="seccion-etiqueta">Por qué CaféYa</span>
+        <h2 class="display">Una experiencia completa</h2>
+        <p>Todo el proceso pensado para que solo te preocupes por disfrutar.</p>
+      </div>
+    </div>
+    <div class="beneficios-grid">
+      <article class="beneficio">
+        <div class="beneficio-icono">⏱️</div>
+        <h3>Recojo sin esperas</h3>
+        <p>Elige la hora exacta de recojo y recibe un código único para presentar en barra.</p>
+      </article>
+      <article class="beneficio">
+        <div class="beneficio-icono">💳</div>
+        <h3>Pagos demostrativos</h3>
+        <p>Yape, Plin y tarjeta en modo simulación, con confirmación inmediata del estado del pago.</p>
+      </article>
+      <article class="beneficio">
+        <div class="beneficio-icono">⭐</div>
+        <h3>Cliente frecuente</h3>
+        <p>Acumula 5 compras pagadas y obtén una bebida gratuita en tu siguiente visita.</p>
+      </article>
+      <article class="beneficio">
+        <div class="beneficio-icono">📱</div>
+        <h3>Mesas con QR</h3>
+        <p>Cada mesa tiene su código QR para pedir desde el celular y dividir la cuenta.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FIDELIZACIÓN -->
+  <section class="seccion fidelidad" id="fidelizacion">
+    <div class="fidelidad-texto">
+      <span class="seccion-etiqueta">Programa de fidelización</span>
+      <h2 class="display">Cinco compras, una bebida gratis</h2>
+      <p>
+        Cada pedido entregado y pagado ocupa un espacio en tu tarjeta digital. Al completar
+        los cinco espacios se habilita el beneficio de una bebida gratuita. El canje se
+        gestionará en una siguiente fase del proyecto.
+      </p>
+      <div class="fidelidad-items">
+        <div><strong>1</strong><span>Registra tu cuenta</span></div>
+        <div><strong>2</strong><span>Compra y paga tu pedido</span></div>
+        <div><strong>3</strong><span>Completa los 5 espacios</span></div>
+      </div>
+      <a class="btn btn-primario" href="cliente/fidelizacion.html">Ver mi tarjeta</a>
+    </div>
+    <div class="tarjeta-demo">
+      <div class="tarjeta-demo-cabeza">
+        <div>
+          <span>CAFÉYA · CLIENTE FRECUENTE</span>
+          <strong>María Fernández</strong>
+        </div>
+        <span class="tarjeta-logo">☕</span>
+      </div>
+      <div class="tarjeta-slots" id="tarjeta-slots"></div>
+      <div class="tarjeta-demo-pie">
+        <span>4 de 5 compras</span>
+        <span>1 espacio pendiente</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="seccion contacto" id="contacto">
+    <div class="contacto-info">
+      <span class="seccion-etiqueta">Visítanos en Ica</span>
+      <h2 class="display">Estamos a dos cuadras de la Plaza de Armas</h2>
+      <p class="muted">Av. Los Maestros 245, Ica · Atención de lunes a domingo de 08:00 a 22:00.</p>
+      <div class="contacto-lista">
+        <div><span>📍</span><div><strong>Dirección</strong><p>Av. Los Maestros 245, Ica, Perú</p></div></div>
+        <div><span>📞</span><div><strong>Teléfono</strong><p>(056) 234 567 · WhatsApp 956 789 123</p></div></div>
+        <div><span>✉️</span><div><strong>Correo</strong><p>hola@cafeya.pe</p></div></div>
+        <div><span>🕒</span><div><strong>Horario</strong><p>Lunes a domingo · 08:00 a 22:00</p></div></div>
+      </div>
+      <div class="contacto-redes">
+        <a href="https://facebook.com/cafeyaiica" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/cafeyaiica" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@cafeyaiica" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="contacto-mapa">
+      <iframe title="Ubicación de CaféYa Ica" src="https://maps.google.com/maps?q=Ica%2C%20Peru&z=14&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- ACCESOS DEMO -->
+  <section class="seccion accesos" id="accesos">
+    <div class="seccion-cabeza centro">
+      <div>
+        <span class="seccion-etiqueta">Demostración académica</span>
+        <h2 class="display">Accesos de prueba</h2>
+        <p>Usuarios creados automáticamente para la presentación del sistema.</p>
+      </div>
+    </div>
+    <div class="accesos-grid">
+      <article class="acceso-card">
+        <span class="acceso-icono">👤</span>
+        <h3>Panel del cliente</h3>
+        <p>Menú, carrito, pagos, seguimiento, reservas y fidelización.</p>
+        <code>cliente@cafeya.pe · 123456</code>
+        <a class="btn btn-claro btn-sm btn-block" href="cliente/login.html">Ingresar como cliente</a>
+      </article>
+      <article class="acceso-card">
+        <span class="acceso-icono">🛠️</span>
+        <h3>Panel administrativo</h3>
+        <p>Dashboard, pedidos, productos, promociones, reportes y configuración.</p>
+        <code>admin@cafeya.pe · admin123</code>
+        <a class="btn btn-claro btn-sm btn-block" href="administrador/login-admin.html">Ingresar como administrador</a>
+      </article>
+      <article class="acceso-card">
+        <span class="acceso-icono">👨‍🍳</span>
+        <h3>Panel de cocina</h3>
+        <p>Comandas en tiempo real y cambio de estados de preparación.</p>
+        <code>cocina@cafeya.pe · cocina123</code>
+        <a class="btn btn-claro btn-sm btn-block" href="cocina/cocina.html">Ingresar a cocina</a>
+      </article>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="js/almacenamiento.js"></script>
+  <script src="js/datos-iniciales.js"></script>
+  <script src="js/utilidades.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/autenticacion.js"></script>
+  <script src="js/permisos.js"></script>
+  <script src="js/promociones-service.js"></script>
+  <script src="js/carrito-service.js"></script>
+  <script src="componentes/notificaciones.js"></script>
+  <script src="componentes/modales.js"></script>
+  <script src="componentes/navbar.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta · CaféYa Ica</title>
+  <link rel="icon" href="../assets/logos/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../componentes/modales.css">
+  <link rel="stylesheet" href="../componentes/notificaciones.css">
+  <link rel="stylesheet" href="registro.css">
+</head>
+<body class="auth-body">
+  <div class="auth-layout">
+    <aside class="auth-lateral">
+      <a class="auth-marca" href="../index.html">
+        <img src="../assets/logos/logo.svg" alt="CaféYa Ica">
+        <div><span class="marca">Café<span>Ya</span><small>Ica · Café de especialidad</small></span></div>
+      </a>
+      <div class="auth-lateral-texto">
+        <span class="auth-chip">Nueva cuenta</span>
+        <h1 class="display">Cada visita cuenta,<br>cada compra suma.</h1>
+        <p>Crea tu cuenta en menos de un minuto y empieza a acumular espacios en tu tarjeta de cliente frecuente desde tu primer pedido pagado.</p>
+        <ul class="lista-check">
+          <li>Historial de pedidos, pagos y reservas</li>
+          <li>Tarjeta digital de 5 compras</li>
+          <li>Reserva de mesas con Wi-Fi y enchufe</li>
+          <li>Buzón de sugerencias y calificaciones</li>
+        </ul>
+      </div>
+      <div class="auth-lateral-pie">
+        CaféYa Ica S.A.C. · Av. Los Maestros 245, Ica<br>
+        Proyecto académico demostrativo · Versión 1.0
+      </div>
+    </aside>
+
+    <main class="auth-principal">
+      <div class="auth-caja">
+        <div class="auth-caja-cabeza">
+          <h2 class="display">Crear mi cuenta</h2>
+          <p>Completa tus datos para empezar a pedir.</p>
+        </div>
+
+        <form id="form-registro" novalidate>
+          <div class="form-grid">
+            <div class="campo">
+              <label for="nombre">Nombres y apellidos <span class="req">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. María Fernández" autocomplete="name">
+              <span class="error"></span>
+            </div>
+            <div class="form-grid dos">
+              <div class="campo">
+                <label for="correo">Correo electrónico <span class="req">*</span></label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email">
+                <span class="error"></span>
+              </div>
+              <div class="campo">
+                <label for="celular">Celular <span class="req">*</span></label>
+                <input type="tel" id="celular" name="celular" placeholder="987 654 321" autocomplete="tel">
+                <span class="error"></span>
+              </div>
+            </div>
+            <div class="form-grid dos">
+              <div class="campo">
+                <label for="distrito">Distrito <span class="req">*</span></label>
+                <select id="distrito" name="distrito">
+                  <option value="">Selecciona tu distrito</option>
+                  <option>Ica</option>
+                  <option>La Tinguiña</option>
+                  <option>Subtanjalla</option>
+                  <option>San Juan Bautista</option>
+                  <option>Parcona</option>
+                  <option>Los Aquijes</option>
+                  <option>Otro</option>
+                </select>
+                <span class="error"></span>
+              </div>
+              <div class="campo">
+                <label for="preferencia">Preferencia</label>
+                <select id="preferencia" name="preferencia">
+                  <option value="Cafés">Cafés</option>
+                  <option value="Bebidas frías">Bebidas frías</option>
+                  <option value="Desayunos">Desayunos</option>
+                  <option value="Postres">Postres</option>
+                  <option value="Combos">Combos</option>
+                </select>
+                <span class="error"></span>
+              </div>
+            </div>
+            <div class="form-grid dos">
+              <div class="campo">
+                <label for="password">Contraseña <span class="req">*</span></label>
+                <div class="campo-password">
+                  <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password">
+                  <button type="button" class="ver-pass" id="ver-pass">Ver</button>
+                </div>
+                <span class="error"></span>
+              </div>
+              <div class="campo">
+                <label for="confirmar">Repetir contraseña <span class="req">*</span></label>
+                <input type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña" autocomplete="new-password">
+                <span class="error"></span>
+              </div>
+            </div>
+            <label class="check">
+              <input type="checkbox" id="terminos"> Acepto las condiciones de uso y el tratamiento de mis datos para esta demostración.
+            </label>
+            <button class="btn btn-primario btn-block btn-lg" type="submit">Crear mi cuenta</button>
+          </div>
+        </form>
+
+        <p class="auth-enlace">¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+        <p class="auth-enlace"><a href="../index.html">← Volver al sitio web</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/almacenamiento.js"></script>
+  <script src="../js/datos-iniciales.js"></script>
+  <script src="../js/utilidades.js"></script>
+  <script src="../js/validaciones.js"></script>
+  <script src="../js/autenticacion.js"></script>
+  <script src="../componentes/notificaciones.js"></script>
+  <script src="../componentes/modales.js"></script>
+  <script src="registro.js"></script>
+</body>
+</html>

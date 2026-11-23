@@ -1,0 +1,12 @@
+/* ============ ADMINISTRACIÓN DE PAGOS ============ */
+.pago-codigo{font-family:ui-monospace,monospace;font-size:12.5px;font-weight:700;color:var(--azul);letter-spacing:.4px}
+.pago-metodo{display:flex;align-items:center;gap:6px;font-size:12.5px}
+.pago-metodo .icono{font-size:15px}
+.pago-importe{font-weight:800;color:var(--azul);font-size:14px}
+.pago-importe small{display:block;font-size:10.5px;color:var(--gris-claro);font-weight:400}
+.pagos-demo-aviso{
+  display:flex;gap:10px;align-items:flex-start;background:#1F2461;color:#fff;border-radius:12px;
+  padding:13px 15px;font-size:12.5px;margin-bottom:16px;
+}
+.pagos-demo-aviso strong{display:block;color:#8FE3D4;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:2px}
+.pago-comprobante{font-size:11px;color:var(--gris-claro)}

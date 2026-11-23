@@ -1,0 +1,14 @@
+/* ============ ADMINISTRACIÓN DE CLIENTES ============ */
+.cliente-celda{display:flex;align-items:center;gap:10px;min-width:180px}
+.cliente-celda strong{display:block;font-size:13px;color:var(--texto);line-height:1.25}
+.cliente-celda small{display:block;font-size:11px;color:var(--gris-claro)}
+.cliente-metricas{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.cliente-metricas div{text-align:center;min-width:74px}
+.cliente-metricas strong{display:block;font-size:19px;color:var(--azul);line-height:1.2}
+.cliente-metricas span{font-size:10.5px;color:var(--gris-claro);text-transform:uppercase;letter-spacing:.6px}
+.tarjeta-mini-fid{display:flex;gap:5px;margin-top:6px}
+.tarjeta-mini-fid i{
+  width:14px;height:14px;border-radius:4px;background:#E9EBF4;display:block;
+}
+.tarjeta-mini-fid i.lleno{background:var(--menta)}
+.cliente-filtro-estado{min-width:130px}

@@ -1,0 +1,37 @@
+/* ============ CARRITO DE COMPRAS ============ */
+.carrito-grid{display:grid;grid-template-columns:1.4fr .75fr;gap:20px;align-items:start}
+.carrito-linea{
+  display:grid;grid-template-columns:1fr auto auto auto;gap:14px;align-items:center;
+  padding:14px 0;border-bottom:1px solid var(--borde);
+}
+.carrito-linea:last-child{border-bottom:none}
+.carrito-prod{display:flex;gap:12px;align-items:center;min-width:0}
+.carrito-prod img{width:64px;height:64px;border-radius:12px;object-fit:cover;flex:0 0 auto;background:#EDEFF6}
+.carrito-prod strong{display:block;font-size:13.5px;color:var(--azul);line-height:1.3}
+.carrito-prod span{font-size:11.5px;color:var(--gris)}
+.carrito-prod em{display:block;font-size:11px;color:var(--terracota);font-style:normal;margin-top:2px}
+.carrito-prod .promo-chip{
+  display:inline-block;background:var(--terracota-soft);color:var(--terracota);font-size:10px;
+  font-weight:700;padding:2px 7px;border-radius:6px;margin-top:4px;
+}
+.carrito-subtotal{text-align:right;font-weight:700;color:var(--azul);white-space:nowrap;font-size:14px}
+.carrito-subtotal small{display:block;font-size:11px;color:var(--gris-claro);text-decoration:line-through;font-weight:400}
+.resumen-pago{position:sticky;top:86px}
+.resumen-pago h3{font-size:15px;margin-bottom:12px}
+.resumen-pago .resumen-linea{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:7px 0;color:var(--gris)}
+.resumen-pago .resumen-linea.descuento{color:var(--menta)}
+.resumen-pago .total-final{
+  display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--borde);
+  margin-top:10px;padding-top:14px;font-size:15px;font-weight:700;color:var(--azul);
+}
+.resumen-pago .total-final strong{font-size:22px}
+.carrito-vacio{padding:20px 0}
+.pago-seguro{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--gris-claro);margin-top:12px;justify-content:center}
+@media(max-width:1000px){.carrito-grid{grid-template-columns:1fr}.resumen-pago{position:static}}
+@media(max-width:620px){
+  .carrito-linea{grid-template-columns:1fr auto;gap:10px}
+  .carrito-subtotal{grid-column:2;grid-row:1}
+  .carrito-linea .cantidad-control{grid-column:1;grid-row:2;justify-self:start}
+  .carrito-linea .btn-peligro{grid-column:2;grid-row:2;justify-self:end}
+  .carrito-prod img{width:54px;height:54px}
+}

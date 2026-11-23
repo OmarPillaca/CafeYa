@@ -1,0 +1,10 @@
+@import url('login.css');
+
+/* ============ REGISTRO DE CLIENTES ============ */
+.auth-caja{max-width:580px}
+.auth-caja .form-grid.dos{gap:12px}
+.auth-caja .check{font-size:12px;line-height:1.5;align-items:flex-start;padding:2px 0 4px}
+.auth-caja .check input{margin-top:2px}
+@media(max-width:620px){
+  .auth-caja .form-grid.dos{grid-template-columns:1fr}
+}

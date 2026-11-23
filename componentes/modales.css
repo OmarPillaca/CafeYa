@@ -1,0 +1,20 @@
+/* ============ MODALES: estilos complementarios ============ */
+.modal .detalle-lista{display:flex;flex-direction:column}
+.modal .detalle-linea{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed var(--borde);font-size:13px}
+.modal .detalle-linea:last-child{border-bottom:none}
+.modal .detalle-linea span{color:var(--gris)}
+.modal .detalle-linea strong{color:var(--texto);text-align:right;max-width:62%}
+.modal .codigo-grande{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:24px;letter-spacing:3px;
+  font-weight:700;color:var(--azul);background:#F2F4FA;border-radius:12px;padding:12px 18px;
+  text-align:center;margin:6px 0 14px;
+}
+.modal .qr-caja{background:#fff;border:2px dashed var(--borde);border-radius:16px;padding:12px;display:inline-block}
+.modal .modal-lista{display:flex;flex-direction:column;gap:9px;margin:0;padding:0;list-style:none}
+.modal .modal-lista li{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:9px 12px;background:#F8F9FD;border-radius:9px}
+.modal .modal-lista li strong{color:var(--azul)}
+.modal fieldset{border:1px solid var(--borde);border-radius:12px;padding:14px 16px;margin:0 0 16px}
+.modal legend{font-size:12px;font-weight:700;color:var(--azul);padding:0 6px}
+.modal hr{border:none;border-top:1px solid var(--borde);margin:16px 0}
+.modal .total-linea{display:flex;justify-content:space-between;font-size:15px;font-weight:700;color:var(--azul);border-top:1px solid var(--borde);padding-top:12px;margin-top:6px}
+.modal .total-linea small{display:block;font-size:11px;color:var(--gris);font-weight:400}

@@ -1,0 +1,53 @@
+/* ============ CHECKOUT Y PAGO DEMOSTRATIVO ============ */
+.pago-grid{display:grid;grid-template-columns:1.25fr .8fr;gap:20px;align-items:start}
+.opciones-modalidad{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opcion-card{
+  position:relative;display:flex;gap:11px;align-items:center;padding:14px;border:1.5px solid var(--borde);
+  border-radius:13px;cursor:pointer;background:#fff;transition:var(--trans);
+}
+.opcion-card input{position:absolute;opacity:0;pointer-events:none}
+.opcion-card .icono{width:38px;height:38px;border-radius:10px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;font-size:17px;flex:0 0 auto}
+.opcion-card strong{display:block;font-size:13px;color:var(--azul);line-height:1.2}
+.opcion-card small{font-size:11px;color:var(--gris-claro)}
+.opcion-card.seleccionado{border-color:var(--teal);background:var(--teal-soft);box-shadow:0 0 0 3px rgba(0,128,143,.1)}
+.metodos-pago{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:14px 0}
+.metodo-card{
+  position:relative;text-align:center;border:1.5px solid var(--borde);border-radius:13px;padding:13px 8px;
+  cursor:pointer;background:#fff;transition:var(--trans);display:flex;flex-direction:column;gap:4px;align-items:center;
+}
+.metodo-card input{position:absolute;opacity:0;pointer-events:none}
+.metodo-card .icono{font-size:22px;line-height:1}
+.metodo-card strong{font-size:12.5px;color:var(--azul)}
+.metodo-card small{font-size:10px;color:var(--gris-claro)}
+.metodo-card.seleccionado{border-color:var(--terracota);background:var(--terracota-soft)}
+.metodo-card.seleccionado strong{color:var(--terracota)}
+.demo-aviso{
+  display:flex;gap:10px;align-items:flex-start;background:#1F2461;color:#fff;border-radius:12px;
+  padding:12px 14px;font-size:12px;margin-bottom:16px;
+}
+.demo-aviso strong{display:block;color:#8FE3D4;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:2px}
+.qr-simulado{text-align:center;background:#F8F9FD;border:1.5px dashed var(--borde);border-radius:16px;padding:18px;margin:14px 0}
+.qr-simulado img{width:190px;height:190px;margin:0 auto 10px;border-radius:10px;background:#fff;padding:6px}
+.qr-simulado .qr-titulo{font-size:13px;font-weight:700;color:var(--azul)}
+.qr-simulado .qr-monto{font-size:22px;font-weight:800;color:var(--terracota);margin:4px 0}
+.qr-simulado p{font-size:11.5px;color:var(--gris);margin:0}
+.tarjeta-demo-form{border:1.5px dashed var(--borde);background:#F8F9FD;padding:16px;border-radius:14px;margin:14px 0}
+.pago-resultado{text-align:center;padding:26px 16px}
+.resultado-icono{
+  width:78px;height:78px;border-radius:50%;display:grid;place-items:center;font-size:34px;margin:0 auto 16px;
+  background:var(--menta-soft);
+}
+.resultado-icono.error{background:var(--terracota-soft)}
+.pago-resultado h2{font-size:23px;margin-bottom:6px}
+.pago-resultado p{font-size:13px;color:var(--gris);max-width:440px;margin:0 auto 18px}
+.comprobante{
+  background:#F8F9FD;border:1px solid var(--borde);border-radius:14px;padding:16px;max-width:420px;
+  margin:0 auto 18px;text-align:left;font-size:12.5px;
+}
+.comprobante .fila{display:flex;justify-content:space-between;padding:5px 0;color:var(--gris)}
+.comprobante .fila strong{color:var(--azul)}
+@media(max-width:1000px){.pago-grid{grid-template-columns:1fr}}
+@media(max-width:620px){
+  .metodos-pago{grid-template-columns:repeat(2,1fr)}
+  .opciones-modalidad{grid-template-columns:1fr}
+}

@@ -1,0 +1,23 @@
+/* ============ BUZÓN DE SUGERENCIAS ============ */
+.sug-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.estrellas-input{display:flex;gap:6px;margin:4px 0}
+.estrellas-input button{
+  background:none;border:none;font-size:30px;line-height:1;color:#DDE0EA;cursor:pointer;transition:var(--trans);
+  padding:0 2px;
+}
+.estrellas-input button:hover{transform:scale(1.12)}
+.estrellas-input button.activa{color:#F2A93B}
+.sug-categorias{display:flex;gap:7px;flex-wrap:wrap;margin:4px 0}
+.sug-categorias .chip{font-size:11.5px;padding:6px 12px}
+.sug-lista{display:flex;flex-direction:column;gap:10px;max-height:620px;overflow-y:auto;padding-right:2px}
+.sug-item{border:1px solid var(--borde);border-radius:12px;padding:14px;background:#fff}
+.sug-item .cabeza{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:4px}
+.sug-item h4{margin:0;font-size:13px;color:var(--azul)}
+.sug-item p{margin:6px 0 0;font-size:12.5px;color:var(--gris);line-height:1.6}
+.sug-item .respuesta{
+  background:var(--teal-soft);border-radius:9px;padding:9px 12px;font-size:12px;color:#0B5A63;margin-top:9px;
+}
+.sug-promedio{display:flex;align-items:center;gap:14px;background:#FFFBF2;border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.sug-promedio strong{font-size:26px;color:var(--azul);line-height:1}
+.sug-promedio span{font-size:11.5px;color:var(--gris)}
+@media(max-width:900px){.sug-grid{grid-template-columns:1fr}}

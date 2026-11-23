@@ -1,0 +1,15 @@
+/* ============ ACCESO ADMINISTRATIVO ============ */
+.admin-lateral{background:linear-gradient(150deg,#0E1235,var(--azul) 55%,#1B4D5C)}
+.admin-lateral::after{background:radial-gradient(circle,rgba(0,168,143,.34),transparent 70%)}
+.admin-candado{
+  display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:#EEF0F7;
+  font-size:22px;margin:0 auto 12px;
+}
+.admin-demos{display:flex;flex-direction:column;gap:2px}
+.admin-demos button{
+  background:#F8F9FD;border:1px solid var(--borde);border-radius:8px;padding:8px 11px;font-family:inherit;
+  font-size:11.5px;color:var(--gris);cursor:pointer;text-align:left;transition:var(--trans);
+}
+.admin-demos button:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-soft)}
+.admin-auth .auth-caja{max-width:440px}
+.admin-auth .btn-azul{background:linear-gradient(135deg,var(--azul),var(--azul-700))}

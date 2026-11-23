@@ -1,0 +1,15 @@
+/* ============ DASHBOARD ============ */
+.dashboard-alertas{display:flex;flex-direction:column;gap:9px}
+.alerta-linea{
+  display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;
+  border-radius:10px;background:#F8F9FD;border:1px solid var(--borde);font-size:12.5px;color:var(--gris);
+}
+.alerta-linea strong{color:var(--azul)}
+.alerta-linea.peligro{background:#FFF7F5;border-color:#F3D8D2}
+.alerta-linea.peligro strong{color:#B03024}
+.dash-leyenda{font-size:11px;color:var(--gris-claro);margin-top:8px}
+.dash-tabla .celda-persona{min-width:140px}
+.dash-pedido-codigo{font-weight:700;color:var(--azul);font-family:ui-monospace,monospace;font-size:12.5px}
+.dash-grafico-card{min-height:250px}
+.dash-grafico-card .grafico{height:170px}
+@media(max-width:1200px){.dash-grafico-card .grafico{height:150px}}

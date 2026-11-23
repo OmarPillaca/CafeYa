@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de cocina · CaféYa Ica</title>
+  <link rel="icon" href="../assets/logos/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../componentes/modales.css">
+  <link rel="stylesheet" href="../componentes/notificaciones.css">
+  <link rel="stylesheet" href="cocina.css">
+</head>
+<body class="kds">
+  <header class="kds-top">
+    <div class="kds-marca">
+      <img src="../assets/logos/logo.svg" alt="CaféYa Ica">
+      <div>
+        <strong>Panel de cocina</strong>
+        <span>CaféYa Ica · Comandas en tiempo real</span>
+      </div>
+    </div>
+    <div class="kds-reloj">
+      <div class="kds-hora" id="kds-hora">--:--</div>
+      <div class="kds-fecha" id="kds-fecha">Cargando...</div>
+    </div>
+    <div class="kds-acciones">
+      <div class="kds-objetivo" title="Objetivo de preparación del documento">
+        <span>Objetivo</span><strong>&lt; 8 min</strong>
+      </div>
+      <button type="button" class="kds-boton" id="kds-sonido" title="Activar o silenciar avisos">🔔</button>
+      <a class="kds-boton" href="../administrador/dashboard.html" title="Volver al panel">Panel admin</a>
+      <button type="button" class="kds-boton peligro" id="kds-salir">Salir</button>
+    </div>
+  </header>
+
+  <section class="kds-resumen" id="kds-resumen"></section>
+
+  <div class="kds-filtros">
+    <div class="kds-buscador">
+      <span>🔍</span>
+      <input id="kds-buscar" type="search" placeholder="Buscar por código de pedido o cliente...">
+    </div>
+    <div class="kds-leyenda">
+      <span><i class="punto verde"></i>En tiempo</span>
+      <span><i class="punto ambar"></i>Atención</span>
+      <span><i class="punto rojo"></i>Fuera de objetivo</span>
+    </div>
+    <button type="button" class="kds-boton" id="kds-refrescar">↻ Actualizar</button>
+  </div>
+
+  <main class="kds-tablero" id="kds-tablero"></main>
+
+  <div class="kds-pie">
+    <span>Los cambios se sincronizan automáticamente con el seguimiento del cliente y el panel administrativo.</span>
+    <span id="kds-actualizado">—</span>
+  </div>
+
+  <script src="../js/almacenamiento.js"></script>
+  <script src="../js/datos-iniciales.js"></script>
+  <script src="../js/utilidades.js"></script>
+  <script src="../js/validaciones.js"></script>
+  <script src="../js/autenticacion.js"></script>
+  <script src="../js/permisos.js"></script>
+  <script src="../js/promociones-service.js"></script>
+  <script src="../js/pagos-service.js"></script>
+  <script src="../js/pedidos-service.js"></script>
+  <script src="../js/fidelizacion-service.js"></script>
+  <script src="../componentes/notificaciones.js"></script>
+  <script src="../componentes/modales.js"></script>
+  <script src="cocina.js"></script>
+</body>
+</html>

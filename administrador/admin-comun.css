@@ -1,0 +1,31 @@
+/* ============ COMPONENTES DEL PANEL ADMINISTRATIVO ============ */
+.celda-persona{display:flex;align-items:center;gap:9px;min-width:150px}
+.celda-persona strong{display:block;font-size:13px;color:var(--texto);font-weight:600;line-height:1.25}
+.celda-persona small{display:block;color:var(--gris-claro);font-size:11px;line-height:1.3}
+.celda-producto{display:flex;align-items:center;gap:10px;min-width:180px}
+.celda-producto img{width:42px;height:42px;border-radius:10px;object-fit:cover;flex:0 0 auto;background:#EDEFF6}
+.celda-producto strong{display:block;font-size:13px;color:var(--texto);line-height:1.25}
+.celda-producto small{display:block;color:var(--gris-claro);font-size:11px}
+.panel-filtros{
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;background:#fff;padding:14px 16px;
+  border-radius:14px;box-shadow:var(--sombra-sm);border:1px solid var(--borde);margin-bottom:16px;
+}
+.panel-filtros .grow{min-width:170px}
+.panel-filtros input,.panel-filtros select{
+  padding:9px 13px;border:1.5px solid var(--borde);border-radius:10px;font-family:inherit;font-size:13px;
+  background:#fff;color:var(--texto);outline:none;
+}
+.panel-filtros input:focus,.panel-filtros select:focus{border-color:var(--teal)}
+.resumen-linea{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--borde);font-size:13px;color:var(--gris)}
+.resumen-linea:last-child{border-bottom:none}
+.resumen-linea strong{color:var(--azul)}
+.resumen-total{font-size:18px;font-weight:800;color:var(--azul)}
+.form-modal .form-grid{gap:14px}
+.acciones-fila{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.dato-destacado{font-weight:700;color:var(--azul)}
+.tabla .badge{font-size:10.5px}
+.modal .producto-resumen{display:flex;gap:12px;align-items:center;background:#F8F9FD;padding:12px;border-radius:12px;margin-bottom:14px}
+.modal .producto-resumen img{width:64px;height:64px;border-radius:10px;object-fit:cover}
+.modal .producto-resumen h4{margin:0;font-size:14px}
+.modal .producto-resumen p{margin:2px 0 0;font-size:12px;color:var(--gris)}
+.codigo-qr{background:#fff;border:2px dashed var(--borde);border-radius:14px;padding:12px;display:inline-block}

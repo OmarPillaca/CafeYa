@@ -1,0 +1,32 @@
+/* ============ RESERVA DE MESAS ============ */
+.reserva-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:20px;align-items:start}
+.reserva-form .form-grid{gap:14px}
+.lista-mesas{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:4px}
+.mesa-opcion{
+  border:1.5px solid var(--borde);border-radius:12px;padding:12px;background:#fff;text-align:left;
+  cursor:pointer;transition:var(--trans);font-family:inherit;display:block;width:100%;
+}
+.mesa-opcion:hover{border-color:var(--teal);transform:translateY(-1px)}
+.mesa-opcion .flex-between{align-items:center;margin-bottom:2px}
+.mesa-opcion strong{font-size:15px;color:var(--azul)}
+.mesa-opcion .badge{font-size:9.5px;padding:2px 7px}
+.mesa-opcion .small{font-size:10.5px;margin-bottom:4px}
+.mesa-rasgos{font-size:11px;letter-spacing:2px;color:var(--gris-claro)}
+.mesa-opcion .motivo{font-size:10px;font-weight:700;margin-top:6px;color:var(--terracota)}
+.mesa-opcion .motivo.ok{color:var(--menta)}
+.mesa-opcion.no-disponible{background:#F6F7FA;opacity:.65;cursor:not-allowed;border-style:dashed}
+.mesa-opcion.seleccionada{border-color:var(--teal);background:var(--teal-soft);box-shadow:0 0 0 3px rgba(0,128,143,.12)}
+.reserva-item{
+  display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;background:#F8F9FD;
+  border:1px solid var(--borde);margin-bottom:9px;
+}
+.reserva-item .fecha-caja{
+  width:44px;height:46px;border-radius:10px;background:#fff;border:1px solid var(--borde);
+  display:grid;place-items:center;line-height:1.05;text-align:center;flex:0 0 auto;
+}
+.reserva-item .fecha-caja strong{font-size:15px;color:var(--azul)}
+.reserva-item .fecha-caja span{font-size:9px;text-transform:uppercase;color:var(--gris-claro)}
+.reserva-item h4{margin:0;font-size:12.5px}
+.reserva-item p{margin:2px 0 0;font-size:11px;color:var(--gris)}
+.reserva-item .acciones{margin-left:auto}
+@media(max-width:1000px){.reserva-grid{grid-template-columns:1fr}}

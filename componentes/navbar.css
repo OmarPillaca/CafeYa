@@ -1,0 +1,28 @@
+/* ============ NAVBAR PÚBLICO ============ */
+.sitio-logo span{display:block}
+.sitio-acciones{margin-left:0}
+.pie-sitio{background:linear-gradient(180deg,var(--azul-900),#101338);color:#C9CDE8;padding:54px 26px 22px}
+.pie-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:34px}
+.pie-sitio h4{color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;margin:0 0 14px;font-weight:700}
+.pie-sitio a{display:block;color:#B9BEDC;font-size:13px;padding:5px 0;text-decoration:none}
+.pie-sitio a:hover{color:var(--menta)}
+.pie-marca{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.pie-marca img{width:42px;height:42px;background:#fff;border-radius:11px;padding:3px}
+.pie-sitio p{font-size:13px;line-height:1.7;color:#A9AED6}
+.pie-redes{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.pie-redes a{background:rgba(255,255,255,.08);border-radius:8px;padding:7px 12px;font-size:11.5px;font-weight:600}
+.pie-redes a:hover{background:rgba(0,168,143,.25)}
+.pie-final{
+  max-width:1240px;margin:36px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11.5px;color:#8E94C4;
+}
+@media(max-width:900px){
+  .pie-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .sitio-acciones{margin-left:auto}
+  .sitio-acciones .btn-sm{padding:8px 12px;font-size:12px}
+  .menu-movil-btn{margin-left:0;margin-right:2px}
+}
+@media(max-width:560px){
+  .pie-grid{grid-template-columns:1fr}
+  .sitio-acciones .btn-ghost,.sitio-acciones .btn-claro{display:none}
+}
